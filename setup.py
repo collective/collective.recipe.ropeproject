@@ -16,6 +16,7 @@ setup(
     namespace_packages = ['mz', 'mz.recipe'],
     install_requires = [
         'zc.recipe.egg',
+        'rope'
     ],
     zip_safe=False,
     entry_points = {'zc.buildout': ['default = %s:Recipe' % name]},
