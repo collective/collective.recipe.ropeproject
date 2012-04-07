@@ -9,7 +9,7 @@ setup(
     version = version,
     author = "Marcio Mazza",
     author_email = "marciomazza@gmail.com",
-    description = "Buildout recipe for creating a .ropeproject with configured paths of eggs and dependencies",
+    description = "zc.buildout recipe for creating a .ropeproject with configured paths of eggs and dependencies",
     packages = find_packages('.'),
     include_package_data = True,
     package_dir = {'':'.'},
