@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-name = "mz.recipe.ropeproject"
+name = "il.recipe.ropeproject"
 version = '1.0b1'
 
 # TODO: remove defaults
@@ -13,7 +13,7 @@ setup(
     packages = find_packages('.'),
     include_package_data = True,
     package_dir = {'':'.'},
-    namespace_packages = ['mz', 'mz.recipe'],
+    namespace_packages = ['il', 'il.recipe'],
     install_requires = [
         'zc.recipe.egg',
         'rope'
