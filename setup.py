@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 
-name = "mz.recipe.ropemacs"
-version = '0.1dev'
+name = "mz.recipe.ropeproject"
+version = '1.0b1'
 
-# TODO: rever se nao estou repetindo defaults
+# TODO: remove defaults
 setup(
     name = name,
     version = version,
     author = "Marcio Mazza",
     author_email = "marciomazza@gmail.com",
-    description = "Buildout recipe for creating a .ropemacs file with configured path for dependencies",
+    description = "Buildout recipe for creating a .ropeproject with configured paths of eggs and dependencies",
     packages = find_packages('.'),
     include_package_data = True,
     package_dir = {'':'.'},
