@@ -15,7 +15,6 @@ setup(
     package_dir = {'':'.'},
     namespace_packages = ['mz', 'mz.recipe'],
     install_requires = [
-        'zc.buildout',
         'zc.recipe.egg',
     ],
     zip_safe=False,
