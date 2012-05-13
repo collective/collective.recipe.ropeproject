@@ -1,0 +1,6 @@
+1.0b1 (2012-05-13)
+==================
+
+- Initial implementation.
+  [marciomazza]
+
