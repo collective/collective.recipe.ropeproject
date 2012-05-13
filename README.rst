@@ -13,5 +13,5 @@ parts = ... ropeproject
 eggs = ...
 
 [ropeproject]
-recipe = il.recipe.ropeproject
+recipe = collective.recipe.ropeproject
 eggs = ${instance:eggs}
