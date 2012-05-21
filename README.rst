@@ -67,5 +67,5 @@ You should end up with something like this::
     eggs = ...
 
     [ropeproject]
-    recipe = il.recipe.ropeproject
+    recipe = collective.recipe.ropeproject
     eggs = ${instance:eggs}
