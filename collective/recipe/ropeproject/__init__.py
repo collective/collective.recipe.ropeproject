@@ -1,8 +1,4 @@
-"""
-This recipe creates a `.ropeproject/config.py` configuration
-with python_path matching the specified eggs and their dependencies.
-"""
-
+# -*- coding: utf-8 -*-
 import logging, os, zc.buildout
 import zc.recipe.egg
 import inspect, shutil

@@ -17,7 +17,7 @@ This `zc.buildout <http://www.buildout.org/>`_ recipe makes a
 with search paths pointing to the eggs of your choice... and their transitive dependencies!
 
 Benefits
---------
+~~~~~~~~
 
 1. Make rope both faster and more precise. [#]_
 
@@ -29,13 +29,9 @@ Benefits
 
 .. [#] *This statement has not been evaluated by the FDA.*
 
-Name
-----
-
-The *collective.* in the beginnig is because I wish to put it there. But only after I have time to make some tests.
 
 Usage
-=====
+~~~~~
 
 In your buildout.cfg include the recipe, with the eggs property set to whatever you need
 (tipically ${instance:eggs})::

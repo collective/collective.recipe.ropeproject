@@ -1,0 +1,44 @@
+Test
+====
+
+If we install the recipe with an egg `eggstub.main` that depends on another egg `eggstub.dep`,
+the resulting config shoud include both their paths::
+
+    >>> write('buildout.cfg',
+    ... """
+    ... [buildout]
+    ... parts = ropeproject
+    ... find-links = %(sample_buildout)s/eggs
+    ...
+    ... develop =
+    ...     %(test_dir)s/eggstub.main
+    ...     %(test_dir)s/eggstub.dep
+    ...
+    ... [ropeproject]
+    ... recipe = collective.recipe.ropeproject
+    ... eggs = eggstub.main
+    ... """ % globals())
+    >>> out = system(join('bin', 'buildout'))
+    >>> print out[out.find('Develop:'):]
+    Develop: '.../collective.recipe.ropeproject/collective/recipe/ropeproject/tests/eggstub.main'
+    Develop: '.../collective.recipe.ropeproject/collective/recipe/ropeproject/tests/eggstub.dep'
+    Installing ropeproject.
+    ...
+    >>> ls('.ropeproject')
+    -  config.py
+    >>> cat('.ropeproject/config.py')
+    # The default ``config.py``
+    <BLANKLINE>
+    <BLANKLINE>
+    def set_prefs(prefs):
+        """This function is called before opening the project"""
+    ...
+    <BLANKLINE>
+        prefs.add('python_path', '.../collective.recipe.ropeproject/collective/recipe/ropeproject/tests/eggstub.main/src')
+        prefs.add('python_path', '.../collective.recipe.ropeproject/collective/recipe/ropeproject/tests/eggstub.dep/src')
+        prefs.add('python_path', '...-packages')
+    <BLANKLINE>
+    <BLANKLINE>
+    def project_opened(project):
+        """This function is called after opening the project"""
+        # Do whatever you like here!
