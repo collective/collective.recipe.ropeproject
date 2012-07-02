@@ -47,7 +47,7 @@ setup(
     keywords='buildout eggs rope refactoring emacs vim',
     author="Marcio Mazza",
     author_email="marciomazza@gmail.com",
-    url='https://github.com/collective/collective.recipe.ropeproject',
+    url='http://pypi.python.org/pypi/collective.recipe.ropeproject',
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective', 'collective.recipe'],
