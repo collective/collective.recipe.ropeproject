@@ -11,7 +11,6 @@ long_description = """
  Detailed Documentation
 ========================
 %s
-%s
 
 ================
  Change history
@@ -23,7 +22,6 @@ long_description = """
 ==============
 %s
 """ % (read('README.rst'),
-       read('collective/recipe/ropeproject/tests/ropeproject.txt'),
        read('CHANGES.txt'),
        read('CONTRIBUTORS.txt'),)
 
