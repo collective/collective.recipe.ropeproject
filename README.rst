@@ -4,7 +4,7 @@ Motivation
 `Rope <http://rope.sourceforge.net/>`_ is a great tool for python development.
 
 It is a `refactoring library <http://rope.sourceforge.net/overview.html>`_
-with the marvelous side effect of letting you navigate throught code.
+with the marvelous side effect of letting you navigate throughout code.
 
 You can use it with either `emacs <http://rope.sourceforge.net/ropemacs.html>`_
 of `vim <http://rope.sourceforge.net/ropevim.html>`_
