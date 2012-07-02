@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 name = "collective.recipe.ropeproject"
-version = '1.0b2'
+version = '1.0b3dev'
 
 read = lambda f: open(f).read()
 

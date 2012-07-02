@@ -57,7 +57,7 @@ You should end up with something like this::
     auto-checkout = *
 
     [sources]
-    collective.recipe.ropeproject = git http://github.com/marciomazza/collective.recipe.ropeproject.git
+    collective.recipe.ropeproject = git http://github.com/collective/collective.recipe.ropeproject.git
 
     [instance]
     eggs = ...
