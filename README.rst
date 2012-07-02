@@ -33,35 +33,17 @@ Benefits
 Usage
 ~~~~~
 
-In your buildout.cfg include the recipe, with the eggs property set to whatever you need
-(tipically ${instance:eggs})::
+In your buildout.cfg include the recipe, with the eggs property set to one or more egss::
 
     [buildout]
     ...
     parts = ... ropeproject
 
-    [instance]
-    eggs = ...
-
     [ropeproject]
     recipe = collective.recipe.ropeproject
-    eggs = ${instance:eggs}
+    eggs = ${anything_you_want}
 
-If you use `mr.developer <http://pypi.python.org/pypi/mr.developer>`_ you can point directly to the GitHub repo.
-You should end up with something like this::
+Source
+~~~~~~
 
-    [buildout]
-    ...
-    parts = ... ropeproject
-    extensions = ... mr.developer
-    auto-checkout = *
-
-    [sources]
-    collective.recipe.ropeproject = git http://github.com/collective/collective.recipe.ropeproject.git
-
-    [instance]
-    eggs = ...
-
-    [ropeproject]
-    recipe = collective.recipe.ropeproject
-    eggs = ${instance:eggs}
+Source code lives at http://github.com/collective/collective.recipe.ropeproject.git.
