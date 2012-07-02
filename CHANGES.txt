@@ -1,3 +1,9 @@
+1.0b3 (2012-07-02)
+==================
+
+- Moved repo to https://github.com/collective/collective.recipe.ropeproject
+- Delivered to PyPI
+
 1.0b2 (2012-07-01)
 ==================
 

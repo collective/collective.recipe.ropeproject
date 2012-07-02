@@ -33,7 +33,7 @@ Benefits
 Usage
 ~~~~~
 
-In your buildout.cfg include the recipe, with the eggs property set to one or more egss::
+In your buildout.cfg include the recipe, with the eggs property set to one or more eggs::
 
     [buildout]
     ...
